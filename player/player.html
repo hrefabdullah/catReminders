@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.4/howler.min.js"></script>
+    <title>Audio</title>
+
+    <style>
+        input[type=range]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 15px;
+            height: 15px;
+            background: orange;
+            border-radius: 9999px;
+            cursor: pointer;
+        }
+
+        input[type=range]::-moz-range-thumb {
+            width: 15px;
+            height: 15px;
+            background: orange;
+            border-radius: 9999px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="w-screen h-screen flex items-center flex-col justify-center bg-[#9c742f]">
+        <a href="index.html" class="absolute top-0 left-0 ml-8 mt-6 rounded-full px-4 py-1.5 shadow-md bg-orange-100 font-semibold active:scale-95">Back</a>
+        <div class="w-[85%] h-[50%] flex flex-col items-center justify-center gap-10 bg-orange-100 rounded-3xl shadow-lg p-5 px-10">
+
+            <div id="img" class="h-50 w-50 rounded-full"></div>
+
+            <div class="w-full flex h-max items-center justify-center gap-5">
+                <h1 id="time">0:00</h1>
+                <input type="range" id="bar" value="0" min="0" max="100"
+                    class="w-[90%] appearance-none h-2 rounded-full bg-white">
+                <h1 id="dur">3:43</h1>
+            </div>
+
+            <div class="flex  items-center justify-center gap-7">
+                <button class="active:scale-95 h-max rounded-2xl font-semibold bg-orange-300 px-6 py-2 text-md" onclick="play()"
+                    id="play">PLAY</button>
+                <button class="active:scale-105 h-max rounded-2xl font-semibold bg-orange-300 px-6 py-2 text-md" onclick="pause()"
+                    id="pause">PAUSE</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="playerScript.js"></script>
+</body>
+
+</html>

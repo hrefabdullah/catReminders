@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>SereneSounds</title>
+</head>
+
+<body class="md:hidden bg-gray-200 font-sans flex flex-col justify-between h-screen">
+
+    <div class="p-8 max-w-md mx-auto">
+
+        <!-- Header -->
+        <div class="flex items-center justify-between mb-4">
+            <h1 class="text-4xl w-60 font-semibold">
+                How are you doing today?
+            </h1>
+        </div>
+
+
+        <!-- Discover -->
+        <h2 class="text-xl text-gray-600 font-semibold mt-5 mb-3">Discover</h2>
+
+        <div class="grid grid-cols-2 gap-4">
+
+            <!-- Happy -->
+            <a href="player/player.html?mood=happy" id="happy" class="rounded-2xl overflow-hidden shadow-md active:scale-97 bg-white">
+                <img src="assets/happyCat.jpg" class="h-32 w-full object-cover">
+                <div class="flex flex-col items-center ajustify-center h-max mt-1">
+                    <p class="font-semibold">Happy</p>
+                    <p class="text-xs text-gray-500">Feeling joyful</p>
+                </div>
+            </a>
+
+            <!-- Sad -->
+            <a href="player/player.html?mood=sad" id="sad" class="rounded-2xl overflow-hidden shadow-md active:scale-97 bg-white">
+                <img src="assets/sadCat.jpg" class="h-32 w-full object-cover">
+                <div class="pb-3 flex flex-col items-center justify-center h-max mt-1">
+                    <p class="font-semibold">Sad</p>
+                    <p class="text-xs text-gray-500">Feeling worried</p>
+                </div>
+            </a>
+
+            <!-- Confused -->
+            <a href="player/player.html?mood=confuse" id="confused" class="rounded-2xl overflow-hidden shadow-md active:scale-97 bg-white">
+                <img src="assets/confuseCat.jpg" class="h-32 w-full object-cover">
+                <div class="pb-3 flex flex-col items-center justify-center h-max mt-1">
+                    <p class="font-semibold">Confusion</p>
+                    <p class="text-xs text-gray-500">Feeling confused</p>
+                </div>
+            </a>
+
+            <!-- Angry -->
+            <a href="player/player.html?mood=anger" id="angry" class="rounded-2xl overflow-hidden shadow-md active:scale-97 bg-white">
+                <img src="assets/angerCat.jpg" class="h-32 w-full object-cover">
+                <div class="pb-3 flex flex-col items-center justify-center h-max mt-1">
+                    <p class="font-semibold">Anger</p>
+                    <p class="text-xs text-gray-500">Feeling angry</p>
+                </div>
+            </a>
+
+        </div>
+
+        <div class=" bg-white px-5 py-4 rounded-2xl mt-7 ">
+            <h1 class="text-sm">
+
+                “Indeed, with hardship comes ease.” <br>
+                <span class="text-xs text-gray-600"> — Qur’an 94:6</span>
+                <br>
+                <br>
+
+                “And whoever puts their trust in Allah, He will be enough for them.” <br>
+                <span class="text-xs text-gray-600"> — Qur’an 65:3</span>
+                <br>
+                <br>
+
+                “So remember Me; I will remember you.” <br>
+                <span class="text-xs text-gray-600"> — Qur’an 2:152</span>
+                <br>
+                <br>
+                
+                “Allah does not burden a soul beyond what it can bear.” <br>
+                <span class="text-xs text-gray-600"> — Qur’an 2:286</span>
+            </h1>
+        </div>
+
+
+    </div>
+
+    <p class="text-center py-7 text-sm text-gray-800">Made with ❤️ by <a href="github.com/hrefabdullah">Abdullah</a></p>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
