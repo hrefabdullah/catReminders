@@ -36,8 +36,9 @@ function play() {
             min++;
             ply = true
         }
+        ply = true
         dur.innerText = min + ":" + sec
-        bar.max = sound.duration();
+        bar.max = sound.duration;
     }
 }
 
